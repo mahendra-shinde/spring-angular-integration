@@ -9,15 +9,15 @@ import com.jpm.association.entities.Employee;
 import com.jpm.association.entities.Profile;
 import com.jpm.association.entities.Project;
 
-// http://192.168.1.98:8082/api/emps/1
-// http://192.168.1.98:8082/api/emps/listEmpProfile
-// http://192.168.1.98:8082/api/emps/deptDetails
-// http://192.168.1.98:8082/api/emps/projList
-// http://192.168.1.98:8082/api/emps/profile/1
+// http://localhost:8082/api/emps/1
+// http://localhost:8082/api/emps/listEmpProfile
+// http://localhost:8082/api/emps/deptDetails
+// http://localhost:8082/api/emps/projList
+// http://localhost:8082/api/emps/profile/1
 
 @RestController
 @RequestMapping("/api/emps")
-@CrossOrigin(origins="*",allowedHeaders="*")
+@CrossOrigin(origins={"localhost:4200","localhost:5000"},allowedHeaders="*")
 public class EmployeeController {
 	private List<Employee> empList;
 	
